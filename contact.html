@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEPID ICE CREAM</title>
+    <!-- Google Font -->
+    <!-- Open Sans font in five sizes has been used in this website -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="main-wrapper_contact">
+        <!-- Header with Navigation Bar -->
+        <header>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="index.html">
+                            <img class="nav-logo" src="images/logo.svg" alt="SEPID ice cream's logo" width="200"
+                                height="100"></a></li>
+                    <li><a href="#">ORDER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- div for contact form, hours table, and location map -->
+        <div id="contact">
+            <h2>LET'S GET IN TOUCH!</h2>
+            <div id="contactus">
+
+                <form action="contact.html" method="GET">
+                    <div>
+                        <label for="fullname" class="formtitle"> Name</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div>
+                        <label for="youremail" class="formtitle">Email</label>
+                        <input type="email" name="email" id="youremail">
+                    </div>
+                    <div>
+                        <label for="textbox" class="formtitle">Message</label>
+                        <textarea name="textbox" id="textbox" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="formbutton">Send</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Hours of operation table -->
+            <section id="hours">
+                <h3>Hours of operation</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="1">Days</th>
+                            <th rowspan="1">Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>2:00 PM - 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>9:00 AM - 10:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div id="map">
+                <!-- Google Map Code for Algonquin College Location-->
+                <h3>Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44832.48828713023!2d-75.71089006618797!3d45.38855519598546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce066a58f6ecd3%3A0xe4af15ff38cd1b45!2sBaskin%20Robbins%20Meadowlands!5e0!3m2!1sen!2sca!4v1636479434256!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        
+        <!-- footer -->
+        <footer>
+            &copy; Copyright SEPID ICE CREAM, 2021 <br>
+            All images are taken from <u>pexels.com</u>
+        </footer>
+    </div>
+
+</body>
+
+</html>
