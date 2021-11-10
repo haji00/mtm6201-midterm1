@@ -1,0 +1,464 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+}
+
+/* ...................Custom Styles................... */
+/* ...................Home Page................... */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.953rem;
+}
+
+h2 {
+    font-size: 1.563rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4,
+p,
+li,
+button,
+label,
+input,
+textarea,
+td,
+th,
+a {
+    font-size: 1.2rem;
+}
+
+i::before {
+    font-size: 0.8rem;
+}
+
+/* Header with Menu Bar */
+header {
+    background-color: #917cc7;
+}
+
+ul.nav-menu li {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+ul.nav-menu li a {
+    text-decoration: none;
+    padding: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.main-wrapper {
+    background: #cdc6f9;
+    height: 100vh;
+}
+
+header {
+    height: 50%;
+}
+
+ul.nav-menu :hover {
+    color: #cdc6f9;
+    font-weight: bold;
+}
+
+ul.nav-menu :active {
+    color: #cdc6f9;
+    text-decoration: underline;
+}
+
+.category-container {
+    padding: 90px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* I had to exclude the cone from the container to make the scoops work */
+.category-container img:not(.cone) {
+    width: 90px;
+}
+
+.scoop-item {
+    max-height: 250px;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 18%;
+    border: none;
+    box-sizing: border-box;
+}
+
+.scoop {
+
+    transition: all 0.1s ease-in;
+}
+
+.scoop:hover {
+    transform: scale(1.2);
+}
+
+.cone-separator img {
+    width: 120px;
+    position: absolute;
+    top: 26%;
+    margin-left: -70px;
+}
+
+.cone {
+    text-align: center;
+    flex: 0.5;
+    width: 20%;
+    padding: 5px;
+}
+
+@keyframes transformMe {
+    0% {
+        transform: scale(1) rotateX(0) translateX(0);
+    }
+
+    100% {
+        transform: scale(1.5) rotateX(40deg) translateX(0);
+    }
+}
+
+.cone:hover {
+    animation-name: transformMe;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10px;
+}
+
+
+/* ...................Contact Page................... */
+
+
+.main-wrapper_contact {
+    background: #cdc6f9;
+}
+
+#contact h2,
+#contact h3,
+#contact input,
+#contact label,
+#contact textarea {
+    width: 96%;
+    margin: 1% 2% 2% 2%;
+}
+
+.formbutton {
+    height: 2rem;
+    color: #cdc6f9;
+    background-color: #917cc7;
+    margin-left: 2%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Hours of Operation table */
+table {
+    width: 100%;
+}
+
+th {
+    border: 1px solid black;
+    background-color: #917cc7;
+    justify-self: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+td {
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1%;
+}
+
+
+/* Location Map part */
+#map {
+    margin: 5%;
+
+}
+
+#map iframe {
+    width: 100%;
+    height: 300px;
+}
+
+
+#map iframe {
+    height: 90%;
+}
+
+#map {
+    margin-top: 0;
+}
+
+/* ...................Menu Page................... */
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.text-block {
+    width: 60%;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 100px;
+    background-color: rgba(22, 22, 22, 0.6);
+    color: white;
+    padding: 20px 10px 20px 10px;
+}
+
+/* ...................Mobile Styles................... */
+/* ---------------------------------
+Media Query Below 760px 
+----------------------------------*/
+@media screen and (max-width: 760px) {
+    .cone-separator img {
+        left: 0px;
+    }
+
+    /* I had to exclude the cone from the container to make the scoops work*/
+    .category-container img:not(.cone) {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .category-container h3 {
+        font-size: 1rem;
+    }
+
+}
+
+/* ...................Desktop Styles................... */
+/* ---------------------------------
+Media Query 760px and above
+----------------------------------*/
+
+@media screen and (min-width: 760px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* ...................Contact Page................... */
+
+    #contact {
+        max-width: 1200px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr 0.5fr;
+        grid-gap: 5px;
+    }
+
+    #contact h2 {
+        grid-column: 1/3;
+        align-self: end;
+        margin-left: 0;
+    }
+
+    /* Hours of Operation part */
+    table {
+        width: 48%;
+        margin: 10px;
+    }
+
+    #hours {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #hours h3 {
+        margin: 5% 0 1% 0;
+    }
+
+/* ...................Menu Page................... */
+    .text-block {
+        width: 30%;
+        position: absolute;
+        text-align: center;
+        top: 50px;
+        left: 500px;
+        background-color: rgba(22, 22, 22, 0.6);
+        color: white;
+        padding: 20px 10px 20px 10px;
+    }
+}
